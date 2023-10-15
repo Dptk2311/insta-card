@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-link:hover .profile-picture {
+    border: 2px solid #f00;
+}
+
+profile-link:hover .username {
+    color: #f00;
+}
+
+profile-link:active .profile-picture {
+    box-shadow: 0 0 10px 3px rgba(255, 0, 0, 0.6);
+}
+
+username-link:active .username {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.username-link {
+    text-decoration: none;
+}
+
+.username-link:hover .username {
+    color: #00f;
+}
+
+.username-link:active .username {
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+}
+
+.username {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.action-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s;
+}
+
+.button-text {
+    font-size: 1rem;
+}
+
+.icon {
+    fill: black;
+    width: 24px;
+    height: 24px;
+}
+
+.like-button.active .icon {
+    fill: #f00;
+    transform: scale(1.1);
+}
+
+.comment-button.active .icon {
+    fill: #f00;
+    transform: scale(1.1);
+}
+
+share-button.active .icon {
+    fill: #0f0;
+    transform: rotate(-45deg);
+}
+
+save-button.active .icon {
+    fill: #ff0;
+    transform: scale(1.2);
+}
+
+.action-button:hover .icon {
+    fill: #888;
+}
+
+like-button.active .icon {
+    transform: scale(1.1);
+}
+
+comment-button.active .icon {
+    transform: rotate(45deg);
+}
+
+share-button.active .icon {
+    transform: rotate(-45deg);
+}
+
+save-button.active .icon {
+    transform: scale(1.2);
+}
+
+.view-count {
+    padding: 10px;
+    font-size: 0.9rem;
+}
